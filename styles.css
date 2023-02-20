@@ -19,6 +19,7 @@ body {
 }
 
 #preview {
+    position: relative;
     margin: auto;
     width: 60%;
     height: 40vh;
@@ -41,6 +42,14 @@ body {
 
 #preview pre {
     padding: 10px;
+}
+
+#preview img {
+    max-width: 300px;
+    border-radius: 20%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .title {
