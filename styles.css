@@ -45,8 +45,8 @@ body {
 }
 
 #preview img {
-    max-width: 300px;
-    border-radius: 20%;
+    max-width: 20vw;
+    border-radius: 50%;
     position: absolute;
     right: 20px;
     top: 20px;

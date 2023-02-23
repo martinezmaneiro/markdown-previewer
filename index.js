@@ -2,18 +2,14 @@ marked.setOptions({
     breaks: true
 })
 
-const initialState= `
-input here
-
+const initialState= `input here
 # Markdown Previewer
-## By Joaquin Martinez Maneiro
+## Joaquin Martinez Maneiro
 ** Frontend Developer**
 \`<div>- For more projects: </div>\`
 [Visit my GitHub profile](https://github.com/martinezmaneiro)
 - Montevideo, Uruguay
-
 ![GitHub Profile](https://avatars.githubusercontent.com/u/112190072?v=4)
-
 `
 
 const renderer = new marked.Renderer();
