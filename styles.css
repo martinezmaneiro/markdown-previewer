@@ -24,6 +24,8 @@ body {
     font-size: 16px;
     padding: 10px;
     outline: none;
+    max-width: 500px;
+    justify-self: center;
     background-color: #c7f9cc;
     color: #001d3d;
 }
@@ -35,6 +37,9 @@ body {
 #preview {
     grid-area: preview;
     position: relative;
+    max-width: fit-content;
+    justify-self: center;
+    height: fit-content;
     color: #c7f9cc;
     text-align: center;
     font-family: cursive;
@@ -75,5 +80,4 @@ body {
     #editor{
         font-size: 12px;
     }
-
 }
