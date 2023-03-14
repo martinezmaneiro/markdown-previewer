@@ -2,14 +2,16 @@ marked.setOptions({
     breaks: true
 })
 
-const initialState= `input here
+const initialState= `
+![GitHub Profile](https://avatars.githubusercontent.com/u/112190072?v=4)
 # Markdown Previewer
 ## Joaquin Martinez Maneiro
-** Frontend Developer**
-\`<div>- For more projects: </div>\`
+**Frontend Developer**
+For more projects:
 [Visit my GitHub profile](https://github.com/martinezmaneiro)
-- Montevideo, Uruguay
-![GitHub Profile](https://avatars.githubusercontent.com/u/112190072?v=4)
+Montevideo, Uruguay
+input here
+
 `
 
 const renderer = new marked.Renderer();
@@ -19,8 +21,8 @@ function App(){
     const [text, setText] = React.useState(initialState);
 
     return (
-        <div className='text-center px-4'>
-            <h1 className='p-4 title'>My Markdown Previewer</h1>
+        <div className='container'>
+            <h1 className='title'>My Markdown Previewer</h1>
             <textarea
             name='text'
             id='editor'
@@ -30,7 +32,6 @@ function App(){
             onChange={(e) => setText(e.target.value)}
             placeholder='# Add your text here'
             ></textarea>
-            <h3 className='mt-3 title'>Output</h3>
             <Preview markdown={text}/>
         </div>
     )
