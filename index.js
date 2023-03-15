@@ -20,13 +20,13 @@ input here
 const renderer = new marked.Renderer();
 
 function App(){
-    {/*useState hook to keep the input data saved and able to be called from the Previewer*/}
+    {/*State variable declared to keep the input data saved and able to be called from the Previewer*/}
     const [text, setText] = React.useState(initialState);
 
     return (
         <div className='container'>
             <h1 className='title'>My Markdown Previewer</h1>
-            {/*This element will trigger an event listener for all the changes in the input to be saved using a useState hook*/}
+            {/*This element will trigger an event listener for all the changes in the input to be saved in state*/}
             <textarea
             name='text'
             id='editor'
